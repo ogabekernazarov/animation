@@ -1,0 +1,239 @@
+*{
+    margin: 0;
+padding: 0;
+box-sizing: border-box;
+
+}
+.card__wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.circle{
+width: 100px;
+height: 100px;
+border-radius: 50%;
+background: black;
+
+}
+.red{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    animation: redlight;
+    background: #300;
+    animation-duration: 10s;
+    animation-delay: 10s;
+    
+}
+.yellow{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    animation: yellowlight;
+    background: #430;
+    animation-duration: 10s;
+    animation-delay: 20s;
+}
+.green{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    animation: greenlight;
+    background: #030;
+    animation-duration: 10s;
+    animation-delay: 30s;
+}
+
+@keyframes redlight{
+    0%{
+        background: #300;
+    }
+    50%{
+        background: #f00;
+    }
+    90%{
+        background: #300;
+    }
+    100%{
+        background: #300;
+    }
+
+}
+
+
+
+
+
+
+@keyframes yellowlight{
+    0%{
+        background: #430;
+    }
+    50%{
+        background: #fc0;
+    }
+    90%{
+        background: #fc0;
+    }
+    100%{
+        background: #430;
+    }
+
+}
+
+
+
+
+
+@keyframes greenlight{
+    0%{
+        background: #030;
+    }
+    50%{
+        background: #0a0;
+    }
+    90%{
+        background: #0a0;
+    }
+    100%{
+        background: #030;
+    }
+
+}
+.contianer{
+    display: grid;
+    grid-template-columns: repeat(2, 100px);
+    grid-template-rows: repeat(2, 100px);
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 500px;
+    display: flex;
+}
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 70px;
+    font-weight: bold;
+    gap: 300px;
+    background: #f5f;
+    width: 100%;
+    height: 100%;
+    flex-wrap: wrap;
+    
+}
+.box1{
+    background: red;
+}
+.box2{
+    background: yellow;
+}
+.box3{
+    background: green;
+}
+.box4{
+    background: blue;
+}
+.box1{
+    animation: moveright 2s;
+}
+.box2{
+    animation: movedown 2s;
+}
+.box3{
+    animation: moveleft 2s;
+}
+.box4{
+    animation: movedoup 2s;
+}
+
+@keyframes moveright{
+    0%{
+        background:#300;
+    }
+    50%{
+        background:#f00;
+    }
+    100%{
+        background:#300;
+    }
+    0%{
+        transform: translateX(0);
+    }
+    50%{
+        transform: translateX(100px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+
+
+@keyframes movedown{
+    0%{
+        background: #030;
+    }
+    50%{
+        background: #fc0;
+    }
+    100%{
+        background: #030;
+    }
+    0%{
+        transform: translateX(0);
+    }
+    50%{
+        transform: translateX(100px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+
+
+@keyframes moveleft{
+    0%{
+        background: #430;
+    }
+    50%{
+        background:#0a0;
+    }
+    100%{
+        background: #430;
+    }
+    0%{
+        transform: translateX(0);
+    }
+    50%{
+        transform: translateX(-100px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+
+
+
+@keyframes moveup{
+  
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-100px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+
+
